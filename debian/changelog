@@ -1,0 +1,11 @@
+gsa-nodejs-build-dependencies (1.0.1) bionic; urgency=medium
+
+  * Add updates for gsa version 8.0.0 stable
+
+ -- Mohammad Razavi <mrazavi64@gmail.com>  Fri, 12 Apr 2019 20:37:11 +0430
+
+gsa-nodejs-build-dependencies (1.0) bionic; urgency=low
+
+  * Initial Release.
+
+ -- Mohammad Razavi <mrazavi64@gmail.com>  Thu, 07 Mar 2019 23:11:18 +0330

@@ -1,0 +1,17 @@
+Source: gsa-nodejs-build-dependencies
+Section: libdevel
+Priority: optional
+Maintainer: Mohammad Razavi <mrazavi64@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://launchpad.net/~mrazavi/+archive/ubuntu/gvm
+
+Package: gsa-nodejs-build-dependencies
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, xz-utils, nodejs (>= 8.0), yarn (>= 1.0)
+Description: greenbone security assistant nodejs dependencies cache
+ Greenbone Security Assistant (gsa) requires multiple nodejs
+ modules. Unfortunately most of them are not present in the
+ Debian/Ubuntu standard repos. So to make the build process easier the
+ required yarn cache is stored in this package so the build process
+ could be done offline.
