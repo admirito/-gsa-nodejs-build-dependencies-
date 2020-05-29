@@ -3,7 +3,7 @@
 set -e
 
 CACHE_TAR_PATH="${CACHE_TAR_PATH:-/usr/share/gsa-nodejs-build-dependencies/cache.tar.xz}"
-YARN_CACHE_PATH="${YARN_CACHE_PATH:-$(yarn cache dir)}"
+YARN_CACHE_PATH="${YARN_CACHE_PATH:-$(yarnpkg cache dir)}"
 
 if [ ! -d "$YARN_CACHE_PATH" ]; then
     echo "warning: non-existant yarn cache path $YARN_CACHE_PATH; creating it..." >&2

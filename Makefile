@@ -13,8 +13,8 @@ package.json:
 	cp -v "$(GSA_PATH)/gsa/package.json" .
 
 cache: yarn.lock package.json
-	yarn install --cache-folder=./cache
-	rm -rf ./cache/v4/.tmp/
+	yarnpkg install --cache-folder=./cache
+	rm -rf ./cache/v6/.tmp/
 	touch ./cache
 
 cleanup:
@@ -26,12 +26,12 @@ clean: cleanup
 #	rm cache.tar.xz
 
 cache.tar.xz: cache
-	tar -C cache/v4 -cJf cache.tar.xz .
+	tar -C cache/v6 -cJf cache.tar.xz .
 
 backup-tar:
 	cp -v cache.tar.xz ../
 
 reuse-tar:
 	cp -v ../cache.tar.xz .
-	mkdir -p cache/v4
-	tar -C cache/v4 -xJf cache.tar.xz
+	mkdir -p cache/v6
+	tar -C cache/v6 -xJf cache.tar.xz
