@@ -1,3 +1,9 @@
+gsa-nodejs-build-dependencies (3.0.0) focal; urgency=medium
+
+  * Add updates for gsa version 20.8.1 stable
+
+ -- Mohammad Razavi <mrazavi64@gmail.com>  Sun, 07 Feb 2021 14:45:26 +0330
+
 gsa-nodejs-build-dependencies (2.0.1.2) focal; urgency=medium
 
   * Add updates for gsa version 9.0.1 stable
